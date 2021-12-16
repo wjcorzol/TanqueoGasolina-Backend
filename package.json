@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/node": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mongodb": "^4.2.2",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start:dev": "nodemon --exec babel-node src/index.js",
+    "build": "babel -d ./dist ./src -s",
+    "start": "npm rum build && node ./dist/index.js"
+  },
+  "name": "tanqueogasolina-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjcorzol/TanqueoGasolina-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjcorzol/TanqueoGasolina-Backend/issues"
+  },
+  "homepage": "https://github.com/wjcorzol/TanqueoGasolina-Backend#readme",
+  "description": ""
+}
