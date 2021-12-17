@@ -16,7 +16,7 @@
   },
   "name": "tanqueogasolina-backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wjcorzol/TanqueoGasolina-Backend.git"
