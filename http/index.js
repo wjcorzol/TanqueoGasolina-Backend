@@ -16,7 +16,7 @@ app.get("/prueba", (req, res) => {
 
 const init = () => {
     app.listen(port, host, () => {
-        console.log(`Server running on http://${host}:${port}`);
+        console.log(`El servidor esta corriendo en  http://${host}:${port}`);
     });
 }
 

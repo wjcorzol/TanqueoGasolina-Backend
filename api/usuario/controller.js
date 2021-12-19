@@ -1,4 +1,15 @@
-const usuario = require('./model')
+const Usuario = require('./model')
+
+// const list = async (req, res) => {
+//     const usuarios = await Usuario.find();
+//     res.status(200).json({usuarios})
+// }
+
+const list = async (req, res) => {
+    const authors = await Usuario.find();
+    res.status(200).json({ authors })
+}
+
 
 const crearUsuario = async (req, res) => {
     const { nombre, tipoDocumento, numeroDocumento, nacimiento, sexo, ciudad, usuario, contraseña} = req.body;
@@ -24,5 +35,6 @@ const crearUsuario = async (req, res) => {
 }
 
 module.exports = {
-    crearUsuario
+    crearUsuario,
+    list
 }

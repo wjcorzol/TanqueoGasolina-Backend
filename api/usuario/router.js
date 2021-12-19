@@ -1,9 +1,9 @@
 const express = require('express');
-const {crearUsuario} = require('./controller');
+const {crearUsuario, list} = require('./controller');
 const {validarCreacionUsuario} = require('../middleware/validador');
 
 const router = express.Router();
 
-router.route('/').post(validarCreacionUsuario, crearUsuario);
+router.route('/').get(list).post(validarCreacionUsuario, crearUsuario);
 
 module.exports = router;
