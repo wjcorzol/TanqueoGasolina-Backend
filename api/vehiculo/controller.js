@@ -5,7 +5,7 @@ const crearVehiculo = async (req, res) => {
     const vehiculoEncontrado = await vehiculo.find({placaVehiculo});
 
     if(vehiculoEncontrado.length === 0){
-        const nuevoVehiculo = new Vehiculo({
+        const nuevoVehiculo = new vehiculo({
             placaVehiculo,
             tipoVehiculo,
             marcaVehiculo
