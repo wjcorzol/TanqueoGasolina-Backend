@@ -51,6 +51,7 @@ const login = async (req, res) => {
                     data: {
                         usuario: foundUser.usuario,
                         nombre: foundUser.nombre,
+                        rol: foundUser.rol,
                     },
                     message: "ok",
                 });
