@@ -2,7 +2,7 @@ const vehiculo = require('./model')
 
 const crearVehiculo = async (req, res) => {
     const { placaVehiculo, tipoVehiculo, marcaVehiculo} = req.body;
-    const vehiculoEncontrado = await Vehiculo.find({placaVehiculo});
+    const vehiculoEncontrado = await vehiculo.find({placaVehiculo});
 
     if(vehiculoEncontrado.length === 0){
         const nuevoVehiculo = new Vehiculo({
