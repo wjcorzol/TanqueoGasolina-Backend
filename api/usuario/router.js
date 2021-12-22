@@ -4,7 +4,7 @@ const {validarCreacionUsuario} = require('../middleware/validador');
 
 const router = express.Router();
 
-router.route('/').get(list).post(validarCreacionUsuario, crearUsuario);
+router.route('/').get(list)
 router.route('/login').post(login);
 router.route('/registro').post(validarCreacionUsuario, crearUsuario);
 
